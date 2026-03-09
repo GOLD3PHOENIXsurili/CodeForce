@@ -1,0 +1,18 @@
+Use .split() only when input has spaces
+
+For continuous string problems → use input().strip()
+
+.reverse() is a list method, not a string method.
+Strings in Python are immutable, so they don’t have .reverse()
+s = input().lower()
+s = s[::-1]
+print(s)
+
+s = input().lower()
+s = ''.join(reversed(s))
+print(s)
+
+LIST
+lst = [1, 2, 3]
+lst.reverse()
+print(lst)
